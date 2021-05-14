@@ -1,0 +1,27 @@
+.footer__container--outer {
+  display: flex;
+  justify-content: flex-end;
+  height: 6rem;
+}
+
+.footer__container--inner {
+  display: flex;
+  width: 92%;
+  background-color: $light-grey;
+}
+
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__arrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  img {
+    max-height: 3rem;
+  }
+}

@@ -1,0 +1,66 @@
+.navbar__container--outer {
+  margin: $margin-navigation;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+
+  a {
+    img {
+      max-height: 3rem;
+    }
+  }
+}
+
+.navbar__menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+//Links
+
+.navbar__container--links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.navbar__item {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: $secondary;
+}
+
+.navbar__item:hover {
+  color: $primary;
+}
+
+//Icons
+
+.navbar__container--icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20%;
+}
+
+.navbar__link--icon {
+  text-decoration: none;
+  color: $color-link-icons;
+}
+
+.navbar__container--icon-white {
+  background-color: $white;
+}
+
+.navbar__container--icon-black {
+  background-color: $black;
+}

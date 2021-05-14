@@ -1,0 +1,54 @@
+//grey #5E5E5E
+//lgrey #D5D5D5
+//orange EA6509
+//lorange #FFBB80
+//black #000000
+
+/*---Color---*/
+$grey: #5e5e5e;
+$light-grey: #d5d5d5;
+$orange: #ea6509;
+$light-orange: #ffbb80;
+$light-yellow: #fff2d5;
+$black: #000000;
+$white: #ffffff;
+
+// Base
+$primary: $orange;
+$secondary: $grey !default; //CFDN
+
+// Links
+$color-link: #28aaff !default;
+$color-link-icons: #000000 !default;
+
+// Navigation
+$color-nav-link: #000000 !default; //CFDN
+// $color-nav-link-hover:         #28aaff   !default;
+$color-nav-link-active: #ea6509 !default; //CFDN
+
+/*---Typography---*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,400,300,500,700,900);
+
+$font-family-base: "Roboto", sans-serif;
+
+/*---Widths---*/
+$width-xs: 360px !default;
+$width-sm: 460px !default;
+$width-md: 740px !default;
+$width-lg: 1140px !default;
+
+/*---Breakpoints---*/
+$media-breakpoints: (
+  xs: 480px,
+  sm: 640px,
+  md: 800px,
+  lg: 960px,
+  xl: 1200px,
+) !default;
+
+/*---Margins---*/
+$margin-general: 0 0% 0 8%;
+$margin-body: 0 0 0 8%;
+$margin-footer: 0 0 0 8%;
+$margin-navigation: 0 1% 0 8%;
+

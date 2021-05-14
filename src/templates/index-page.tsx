@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 
-import Layout from '../components/Layout'
+import Layout from '../components/skeleton/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 
@@ -14,7 +14,7 @@ export const IndexPageTemplate = ({
   mainpitch,
   description,
   intro,
-}) => (
+}: any) => (
   <div>
     <div
       className="full-width-image margin-top-0"

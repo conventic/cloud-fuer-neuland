@@ -1,0 +1,29 @@
+.sidepanel__container {
+  background-color: $light-yellow;
+  width: 20rem;
+  height: 45rem;
+}
+
+.clip-path__container--outer {
+  clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0% 100%);
+  z-index: 1;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidepanel__placeholder {
+  height: 10rem;
+  width: 100%;
+}
+
+.clip-path__container--inner {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+  img {
+    max-height: 3rem;
+  }
+}
