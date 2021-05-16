@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby";
 
 import Layout from "../components/skeleton/Layout";
 import BlogRoll from "../components/BlogRoll";
+import Girl from "../../static/img/Programmer_girl.jpg"
 
 export const IndexPageTemplate = ({
   image,
@@ -19,9 +20,10 @@ export const IndexPageTemplate = ({
       <div className="container">
         <div className="section">
           <div className="columns">
-            <div className="column is-10 is-offset-1">
+            <div className="column is-12">
               <div className="content">
-                <div className="content">
+                <img src={Girl} alt="alt" />
+                {/* <div className="content">
                   <div className="tile">
                     <h1 className="title">{mainpitch.title}</h1>
                   </div>
@@ -36,7 +38,7 @@ export const IndexPageTemplate = ({
                     </h3>
                     <p>{description}</p>
                   </div>
-                </div>
+                </div> */}
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
                     Latest stories
