@@ -1,6 +1,15 @@
 //Colorizing
 
-.color__primary{
+.color__primary {
   color: $primary;
 }
 
+.img__bg__down {
+  background-image: url("../../static/img/polygon_half_down.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.neuland_jumbo {
+  text-align: end;
+}

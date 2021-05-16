@@ -1,0 +1,28 @@
+.card__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__gap {
+  gap: 2rem;
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h3 {
+    color: $primary;
+  }
+}
+
+.card__content {
+  padding: 1rem;
+  background-color: $light-yellow;
+}
+
+.card__image {
+  object-fit: cover;
+  overflow: contain;
+}

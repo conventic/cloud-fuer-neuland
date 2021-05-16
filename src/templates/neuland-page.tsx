@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/skeleton/Layout";
 import Content, { HTMLContent } from "../components/Content";
-
+import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 import { Card } from "../components/Card";
 
 interface CardItem {
@@ -13,18 +13,20 @@ interface CardItem {
   content: string;
 }
 
-export const ProjektePageTemplate = ({
+export const NeulandPageTemplate = ({
   title,
+  subtitle,
+  img,
   card,
   contentComponent,
 }: {
   title: string;
+  subtitle: string;
+  img: any;
   card: CardItem[];
   contentComponent: any;
 }) => {
   const PageContent = contentComponent || Content;
-
-  console.log(card, "temp")
   return (
     <section className="section section--gradient">
       <div className="container">
@@ -32,15 +34,30 @@ export const ProjektePageTemplate = ({
           <div className="column is-12">
             <div className="section">
               <div className="columns">
+                <div className="column is-8 neuland_jumbo img__bg__down">
+                  <h2>{title}</h2>
+                  <p>{subtitle}</p>
+                </div>
+                <div className="column is-3">
+                  <PreviewCompatibleImage
+                    imageInfo={{
+                      image: img.image,
+                      alt: img.alt,
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="section">
+              <div className="columns">
                 {card.map((item: CardItem) => {
                   return (
-                    <div className="column is-4">
+                    <div className="column is-3">
                       <Card
                         title={item.title}
                         image={item.image}
                         alt={item.alt}
                         content={item.content}
-                        classnames={"card__gap"}
                       />
                     </div>
                   );
@@ -54,37 +71,49 @@ export const ProjektePageTemplate = ({
   );
 };
 
-ProjektePageTemplate.propTypes = {
+NeulandPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   card: PropTypes.array,
   contentComponent: PropTypes.func,
 };
 
-const ProjektePage = ({ data }: { data: any }) => {
+const NeulandPage = ({ data }: { data: any }) => {
   const { markdownRemark: obj } = data;
-  console.log(obj);
   return (
     <Layout>
-      <ProjektePageTemplate
+      <NeulandPageTemplate
         title={obj.frontmatter.title}
+        subtitle={obj.frontmatter.subtitle}
+        img={obj.frontmatter.img}
         card={obj.frontmatter.card}
       />
     </Layout>
   );
 };
 
-ProjektePage.propTypes = {
+NeulandPage.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-export default ProjektePage;
+export default NeulandPage;
 
-export const projektePageQuery = graphql`
-  query ProjektePage($id: String!) {
+export const neulandPageQuery = graphql`
+  query NeulandPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
+        subtitle
+        img {
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          alt
+        }
         card {
           title
           image {

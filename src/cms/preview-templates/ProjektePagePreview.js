@@ -9,7 +9,6 @@ const ProjektePagePreview = ({ entry, widgetFor }) => {
   return (
     <ProjektePageTemplate
       title={entry.getIn(["data", "title"])}
-      content={widgetFor("body")}
       card={card}
     />
   );

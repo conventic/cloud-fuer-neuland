@@ -123,6 +123,55 @@ collections:
                   },
                 ],
             }
+      - file: "src/pages/neuland/index.md"
+        label: "Neuland"
+        name: "neuland"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "neuland-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subitle", name: "subtitle", widget: "string" }
+          - {
+              label: "Img Data",
+              name: "img",
+              widget: object,
+              fields:
+                [
+                  { label: Image, name: image, widget: image },
+                  { label: Alt, name: alt, widget: string },
+                ],
+            }
+          - {
+              label: "Card Data",
+              name: "card",
+              widget: "list",
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Image, name: image, widget: image },
+                  { label: Alt, name: alt, widget: string },
+                  { label: Inhalt, name: content, widget: string },
+                ],
+            }
+          - {
+              label: "Metadaten - Seo Keywords",
+              name: "seoKeywords",
+              widget: "list",
+            }
+          - {
+              label: "Metadaten - Page Title",
+              name: "pageTitle",
+              widget: "string",
+            }
+          - {
+              label: "Metadaten - Pagedescription",
+              name: "pageDescription",
+              widget: "string",
+            }
       - file: "src/pages/projekte/index.md"
         label: "Projekte"
         name: "projekte"
