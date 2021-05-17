@@ -6,6 +6,9 @@ import { graphql } from "gatsby";
 import Layout from "../components/skeleton/Layout";
 import Content, { HTMLContent } from "../components/Content";
 
+import Address from "../components/Address";
+import AddressDataQuery from "../data/address/address-query";
+
 export const DatenschutzPageTemplate = ({
   title,
   content,
@@ -16,16 +19,27 @@ export const DatenschutzPageTemplate = ({
   contentComponent: any;
 }) => {
   const PageContent = contentComponent || Content;
+  const addData = AddressDataQuery();
+  const addressData = addData.nodes[0].frontmatter;
 
   return (
     <section className="section section--gradient">
       <div className="container">
         <div className="columns">
-
           <div className="column is-12">
             <div className="section">
               <h2>{title}</h2>
               <PageContent content={content} />
+              <br />
+              <Address
+                street={addressData.dataAddressBonn.street}
+                zipcode={addressData.dataAddressBonn.zipcode}
+                district={addressData.dataAddressBonn.district}
+                place={addressData.dataAddressBonn.place}
+                country={addressData.dataAddressBonn.country}
+                fon={addressData.dataAddressBonn.fon}
+                email={addressData.dataAddressBonn.mailLink}
+              />
             </div>
           </div>
         </div>
@@ -41,8 +55,6 @@ DatenschutzPageTemplate.propTypes = {
 };
 
 const DatenschutzPage = ({ data }: { data: any }) => {
-  // const addData = AddressDataQuery();
-  // const addressData = addData.nodes[0].frontmatter;
   const { markdownRemark: obj } = data;
   return (
     <Layout>

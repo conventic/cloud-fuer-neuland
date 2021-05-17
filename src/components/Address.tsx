@@ -1,8 +1,5 @@
 import React from "react";
 
-/*---Components---*/
-// import MailTo from "./mail";
-
 const Address = ({
   headline,
   street,
@@ -11,6 +8,7 @@ const Address = ({
   district,
   country,
   fon,
+  email,
 }: {
   headline?: string;
   street: string;
@@ -19,6 +17,7 @@ const Address = ({
   district?: string;
   country: string;
   fon: string;
+  email?: string;
 }) => {
   return (
     <div>
@@ -31,7 +30,7 @@ const Address = ({
       <br />
       {fon}
       <br />
-      {/* <MailTo /> */}
+      {email ? <a href={email}>{email}</a> : null}
     </div>
   );
 };

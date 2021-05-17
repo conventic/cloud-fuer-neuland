@@ -11,29 +11,29 @@ pageTitle: Impressum - Haftungsausschluss
 pageDescription: Hier ist das Impressum und der Haftungsauschluss der Website zu finden
 title: Haftungsausschluss
 impressumTabularData: |-
-  ## Vertretungsberechtigte Geschäftsführung
+  #### Vertretungsberechtigte Geschäftsführung
 
   Bernd Maurer
 
   Marcelo Emmerich
 
-  ## Registergericht
+  #### Registergericht
 
   Amtsgericht Bonn
 
-  ## Registernummer
+  #### Registernummer
 
   HRB 24275
 
-  ## Umsatzsteuer-Identifikationsnummer
+  #### Umsatzsteuer-Identifikationsnummer
 
   Gem. § 27a UStG: DE 272862107
 
-  ## Inhaltliche Verantwortlichkeit
+  #### Inhaltliche Verantwortlichkeit
 
   Dipl.-Ing. Bernd Maurer
 
-  ## Umsetzung
+  #### Umsetzung
 
   conventic GmbH
 
