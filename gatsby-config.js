@@ -28,6 +28,13 @@ module.exports = {
         name: "images",
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `utilities`,
+        path: `${__dirname}/src/data`,
+      },
+    },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
@@ -73,12 +80,50 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-iubenda-cookie-footer",
+      options: {
+        iubendaOptions: {
+          consentOnContinuedBrowsing: false,
+          ccpaAcknowledgeOnDisplay: true,
+          whitelabel: false,
+          lang: "de",
+          siteId: 2251601,
+          enableCcpa: true,
+          countryDetection: true,
+          reloadOnConsent: true,
+          cookiePolicyId: 80467400,
+          cookiePolicyUrl: "/datenschutz",
+          banner: {
+            acceptButtonDisplay: true,
+            customizeButtonDisplay: true,
+            position: "top",
+            acceptButtonColor: "#EA6509",
+            acceptButtonCaptionColor: "white",
+            customizeButtonColor: "#D5D5D5",
+            customizeButtonCaptionColor: "#5E5E5E",
+            rejectButtonColor: "#0073CE",
+            rejectButtonCaptionColor: "white",
+            textColor: "#5E5E5E",
+            backgroundColor: "white",
+          },
+        },
+      },
+    },
+    {
       resolve: "gatsby-plugin-purgecss", // purges all unused/unreferenced css rules
       options: {
         develop: true, // Activates purging in npm run develop
         purgeOnly: ["/main.scss"], // applies purging only on the bulma css file
       },
     }, // must be after other CSS plugins
-    "gatsby-plugin-netlify", // make sure to keep it last in the array
+    {
+      resolve: `gatsby-plugin-netlify`, // make sure to keep it last in the array
+      options: {
+        headers: {
+          "/*": ["X-Frame-Options: sameorigin"],
+        },
+        mergeSecurityHeaders: false,
+      },
+    },
   ],
 };

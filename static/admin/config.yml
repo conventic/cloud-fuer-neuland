@@ -231,7 +231,7 @@ collections:
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
-              default: "Team-page",
+              default: "datenschutz-page",
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
@@ -249,4 +249,79 @@ collections:
               label: "Metadaten - Pagedescription",
               name: "pageDescription",
               widget: "string",
+            }
+      - file: "src/pages/impressum/index.md"
+        label: "Impressum"
+        name: "impressum"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "impressum-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Tabellendaten",
+              name: "impressumTabularData",
+              widget: "markdown",
+            }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: "Metadaten - Seo Keywords",
+              name: "seoKeywords",
+              widget: "list",
+            }
+          - {
+              label: "Metadaten - Page Title",
+              name: "pageTitle",
+              widget: "string",
+            }
+          - {
+              label: "Metadaten - Pagedescription",
+              name: "pageDescription",
+              widget: "string",
+            }
+
+  - name: "data"
+    label: "Data"
+    description: "Hier können neue Datensätze eingefügt werden."
+    files:
+      - file: "src/data/address/address.yaml"
+        label: "Adresse"
+        name: "address"
+        fields:
+          - {
+              label: Bonn,
+              name: dataAddressBonn,
+              widget: object,
+              fields:
+                [
+                  { label: Image, name: image, widget: image },
+                  { label: Straße, name: street, widget: string },
+                  { label: PLZ, name: zipcode, widget: string },
+                  { label: Ort, name: place, widget: string },
+                  { label: Stadtteil, name: district, widget: string },
+                  { label: Land, name: country, widget: string },
+                  { label: Fon, name: fon, widget: string },
+                  { label: MailLink, name: mailLink, widget: string },
+                  { label: MailContent, name: mailContent, widget: string },
+                ],
+            }
+          - {
+              label: Braunschweig,
+              name: dataAddressBraunschweig,
+              widget: object,
+              fields:
+                [
+                  { label: Image, name: image, widget: image },
+                  { label: Straße, name: street, widget: string },
+                  { label: PLZ, name: zipcode, widget: string },
+                  { label: Ort, name: place, widget: string },
+                  { label: Stadtteil, name: district, widget: string },
+                  { label: Land, name: country, widget: string },
+                  { label: Fon, name: fon, widget: string },
+                  { label: MailLink, name: mailLink, widget: string },
+                  { label: MailContent, name: mailContent, widget: string },
+                ],
             }

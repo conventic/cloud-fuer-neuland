@@ -1150,7 +1150,7 @@
     "core-js-pure" "^3.0.0"
     "regenerator-runtime" "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.2.0", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.2", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.2.0", "@babel/runtime@^7.4.3", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.2", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
   "integrity" "sha512-JELkvo/DlpNdJ7dlyw/eY7E0suy5i5GQH+Vlxaq1nsNJ+H7f4Vtv3jMeCEgRhZZQFXTjldYfQgv2qmM6M1v5wA=="
   "resolved" "https://registry.npmjs.org/@babel/runtime/-/runtime-7.14.0.tgz"
   "version" "7.14.0"
@@ -3082,6 +3082,11 @@
   "version" "1.0.10"
   dependencies:
     "sprintf-js" "~1.0.2"
+
+"argparse@^2.0.1":
+  "integrity" "sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q=="
+  "resolved" "https://registry.npmjs.org/argparse/-/argparse-2.0.1.tgz"
+  "version" "2.0.1"
 
 "aria-query@^4.2.2":
   "integrity" "sha512-o/HelwhuKpTj/frsOsbNLNgnNGVIFsVP/SW2BSF14gVl7kAfMOJ6/8wUAUvG1R1NHKrfG+2sHZTu0yauT1qBrA=="
@@ -5900,6 +5905,11 @@
   "resolved" "https://registry.npmjs.org/entities/-/entities-2.0.3.tgz"
   "version" "2.0.3"
 
+"entities@~2.1.0":
+  "integrity" "sha512-hCx1oky9PFrJ611mf0ifBLBRW8lUUVRlFolb5gWRfIELabBlbp9xZvrqZLZAs+NxFnbfQoeGd8wDkygjg7U85w=="
+  "resolved" "https://registry.npmjs.org/entities/-/entities-2.1.0.tgz"
+  "version" "2.1.0"
+
 "env-paths@^2.2.0":
   "integrity" "sha512-+h1lkLKhZMTYjog1VEpJNG7NZJWcuc2DDk/qsqSTRRCOXiLjeQ1d1/udrUGhqMxUgAlwKNZ0cf2uqan5GLuS2A=="
   "resolved" "https://registry.npmjs.org/env-paths/-/env-paths-2.2.1.tgz"
@@ -7245,6 +7255,13 @@
     "lodash" "^4.17.21"
     "micromatch" "^4.0.2"
 
+"gatsby-plugin-iubenda-cookie-footer@^1.3.0":
+  "integrity" "sha512-RsDk7CEgn4K4KcO12OZ7vOBep9vUqrS06Lp5jurIaciFK4Cr2ewEurw9uv0mNMRoi17Xgrnrj8Q7TSfkCuz8Ng=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-iubenda-cookie-footer/-/gatsby-plugin-iubenda-cookie-footer-1.3.0.tgz"
+  "version" "1.3.0"
+  dependencies:
+    "@babel/runtime" "^7.4.3"
+
 "gatsby-plugin-netlify-cms@^5.3.0":
   "integrity" "sha512-k2KNobviOG4sPauEd/RniQEWzpE3TtLDbbDwrtWfIMZLsVLf3lywTQ1llkqBAfTo97g5FkyAPg9Ef9iQ0gGW4Q=="
   "resolved" "https://registry.npmjs.org/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-5.3.0.tgz"
@@ -7549,7 +7566,7 @@
     "semver" "^7.3.4"
     "sharp" "^0.28.0"
 
-"gatsby@^2.0.0 || ^3.0.0", "gatsby@^3.0.0-next.0", "gatsby@^3.3.1":
+"gatsby@^2.0.0 || ^3.0.0", "gatsby@^3.0.0-next.0", "gatsby@^3.3.1", "gatsby@>=2.0.0":
   "integrity" "sha512-Eprejb4317ZYFZXYdXErYGcOZuscXIln5v0JTPFbXtejrM+MMr7qa3GF8NztyOH3alpqAMXm6LyHDMf9oQpLSA=="
   "resolved" "https://registry.npmjs.org/gatsby/-/gatsby-3.3.1.tgz"
   "version" "3.3.1"
@@ -10017,6 +10034,13 @@
   "resolved" "https://registry.npmjs.org/lines-and-columns/-/lines-and-columns-1.1.6.tgz"
   "version" "1.1.6"
 
+"linkify-it@^3.0.1":
+  "integrity" "sha512-gDBO4aHNZS6coiZCKVhSNh43F9ioIL4JwRjLZPkoLIY4yZFwg264Y5lu2x6rb1Js42Gh6Yqm2f6L2AJcnkzinQ=="
+  "resolved" "https://registry.npmjs.org/linkify-it/-/linkify-it-3.0.2.tgz"
+  "version" "3.0.2"
+  dependencies:
+    "uc.micro" "^1.0.1"
+
 "load-bmfont@^1.3.1", "load-bmfont@^1.4.0":
   "integrity" "sha512-8UyQoYmdRDy81Brz6aLAUhfZLwr5zV0L3taTQ4hju7m6biuwiWiJXjPhBJxbUQJA8PrkvJ/7Enqmwk2sM14soA=="
   "resolved" "https://registry.npmjs.org/load-bmfont/-/load-bmfont-1.4.1.tgz"
@@ -10457,6 +10481,17 @@
   "integrity" "sha512-8z4efJYk43E0upd0NbVXwgSTQs6cT3T06etieCMEg7dRbzCbxUCK/GHlX8mhHRDcp+OLlHkPKsvqQTCvsRl2cg=="
   "resolved" "https://registry.npmjs.org/markdown-escapes/-/markdown-escapes-1.0.4.tgz"
   "version" "1.0.4"
+
+"markdown-it@^12.0.6":
+  "integrity" "sha512-qv3sVLl4lMT96LLtR7xeRJX11OUFjsaD5oVat2/SNBIb21bJXwal2+SklcRbTwGwqWpWH/HRtYavOoJE+seL8w=="
+  "resolved" "https://registry.npmjs.org/markdown-it/-/markdown-it-12.0.6.tgz"
+  "version" "12.0.6"
+  dependencies:
+    "argparse" "^2.0.1"
+    "entities" "~2.1.0"
+    "linkify-it" "^3.0.1"
+    "mdurl" "^1.0.1"
+    "uc.micro" "^1.0.5"
 
 "markdown-table@^1.1.0":
   "integrity" "sha512-1RUZVgQlpJSPWYbFSpmudq5nHY1doEIv89gBtF0s4gW1GF2XorxcA/70M5vq7rLv0a6mhOUccRsqkwhwLCIQ2Q=="
@@ -16493,6 +16528,11 @@
   "integrity" "sha512-+O8/qh/Qj8CgC6eYBVBykMrNtp5Gebn4dlGD/kKXVkJNDwyrAwSIqwz8CDf+tsAIWVycKcku6gIXJ0qwx/ZXaQ=="
   "resolved" "https://registry.npmjs.org/ua-parser-js/-/ua-parser-js-0.7.21.tgz"
   "version" "0.7.21"
+
+"uc.micro@^1.0.1", "uc.micro@^1.0.5":
+  "integrity" "sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA=="
+  "resolved" "https://registry.npmjs.org/uc.micro/-/uc.micro-1.0.6.tgz"
+  "version" "1.0.6"
 
 "unbox-primitive@^1.0.0":
   "integrity" "sha512-tZU/3NqK3dA5gpE1KtyiJUrEB0lxnGkMFHptJ7q6ewdZ8s12QrODwNbhIJStmJkd1QDXa1NRA8aF2A1zk/Ypyw=="

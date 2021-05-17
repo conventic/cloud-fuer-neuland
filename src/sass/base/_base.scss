@@ -7,6 +7,17 @@ body {
   color: $secondary;
 }
 
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site__content {
+  flex-grow: 1;
+  width: 100%;
+}
+
 h1,
 h2,
 h3,
@@ -43,5 +54,5 @@ h6 {
 }
 
 a {
-    color: $primary
+  color: $primary;
 }

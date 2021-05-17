@@ -7,7 +7,25 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
-      allMarkdownRemark(limit: 1000) {
+      allMarkdownRemark(
+        limit: 1000
+        filter: {
+          frontmatter: {
+            templateKey: {
+              in: [
+                "blog-post"
+                "datenschutz-page"
+                "impressum-page"
+                "index-page"
+                "jobs-page"
+                "mitmachen-page"
+                "neuland-page"
+                "projekte-page"
+              ]
+            }
+          }
+        }
+      ) {
         edges {
           node {
             id

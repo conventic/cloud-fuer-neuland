@@ -10,10 +10,12 @@ const TemplateWrapper = ({ children }: any) => {
   const queryClient = new QueryClient();
   return (
     <QueryClientProvider client={queryClient}>
-      <Helm />
+      <Helm /><div className="site">
       <Navbar />
-      <div>{children}</div>
-      <Footer />
+
+        <main className="site__content">{children}</main>
+     
+      <Footer /> </div>
     </QueryClientProvider>
   );
 };
