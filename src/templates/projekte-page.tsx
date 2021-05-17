@@ -24,7 +24,6 @@ export const ProjektePageTemplate = ({
 }) => {
   const PageContent = contentComponent || Content;
 
-  console.log(card, "temp")
   return (
     <section className="section section--gradient">
       <div className="container">
@@ -63,7 +62,7 @@ ProjektePageTemplate.propTypes = {
 
 const ProjektePage = ({ data }: { data: any }) => {
   const { markdownRemark: obj } = data;
-  console.log(obj);
+
   return (
     <Layout>
       <ProjektePageTemplate

@@ -27,7 +27,6 @@ export const FetchPersonioXML = () => {
 };
 
 export const DisplayPersonioXML = ({ data }: any) => {
-  console.log(data, "das");
   return (
     <React.Fragment>
       {data.map((item) => {

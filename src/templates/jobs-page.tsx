@@ -3,7 +3,10 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/skeleton/Layout";
 import Content, { HTMLContent } from "../components/Content";
-import {FetchPersonioXML, DisplayPersonioXML} from "../components/PersonioXML";
+import {
+  FetchPersonioXML,
+  DisplayPersonioXML,
+} from "../components/PersonioXML";
 import { SidePanel } from "../components/SidePanel";
 
 export const JobsPageTemplate = ({
@@ -16,7 +19,7 @@ export const JobsPageTemplate = ({
   const PageContent = contentComponent || Content;
 
   let personioXML = FetchPersonioXML();
-  console.log(personioXML);
+
   if (personioXML.status === "isLoading") {
     return <div>Loading</div>;
   }
