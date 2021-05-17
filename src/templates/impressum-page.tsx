@@ -31,16 +31,19 @@ export const ImpressumPageTemplate = ({
       <div className="container">
         <div className="columns">
           <div className={"column is-3"}>
-            <Address
-              street={addressData.dataAddressBonn.street}
-              zipcode={addressData.dataAddressBonn.zipcode}
-              district={addressData.dataAddressBonn.district}
-              place={addressData.dataAddressBonn.place}
-              country={addressData.dataAddressBonn.country}
-              fon={addressData.dataAddressBonn.fon}
-              email={addressData.dataAddressBonn.mailLink}
-            />
-            <PageContent content={md.render(tabularData)} />
+            <div className="section">
+              <h2>Impressum</h2>
+              <Address
+                street={addressData.dataAddressBonn.street}
+                zipcode={addressData.dataAddressBonn.zipcode}
+                district={addressData.dataAddressBonn.district}
+                place={addressData.dataAddressBonn.place}
+                country={addressData.dataAddressBonn.country}
+                fon={addressData.dataAddressBonn.fon}
+                email={addressData.dataAddressBonn.mailLink}
+              />
+              <PageContent content={md.render(tabularData)} />
+            </div>
           </div>
           <div className="column is-9">
             <div className="section">
