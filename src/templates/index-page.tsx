@@ -4,13 +4,17 @@ import { Link, graphql } from "gatsby";
 
 import Layout from "../components/skeleton/Layout";
 import BlogRoll from "../components/BlogRoll";
-import Girl from "../../static/img/Programmer_girl.jpg"
+import Girl from "../../static/img/Programmer_girl.jpg";
+import SYSTEM_DATA from "../data/system.yaml";
+import { LinkIntern } from "../components/Link";
+import { Marquee } from "../components/Marquee";
 
 export const IndexPageTemplate = ({
   image,
   title,
   heading,
   subheading,
+  marquee,
   mainpitch,
   description,
   intro,
@@ -40,14 +44,18 @@ export const IndexPageTemplate = ({
                   </div>
                 </div> */}
                 <div className="column is-12">
+                  <Marquee text={marquee} classnames={"color__primary"} />
+                </div>
+
+                <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
                     Latest stories
                   </h3>
                   <BlogRoll />
                   <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
+                    <LinkIntern url={SYSTEM_DATA.LINKS.INTERN.BLOG}>
+                      {SYSTEM_DATA.GENERAL.ARTIKEL}
+                    </LinkIntern>
                   </div>
                 </div>
               </div>
@@ -64,6 +72,7 @@ IndexPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
+  marquee: PropTypes.string,
   mainpitch: PropTypes.object,
   description: PropTypes.string,
   intro: PropTypes.shape({
@@ -81,6 +90,7 @@ const IndexPage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
+        marquee={frontmatter.marquee}
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
@@ -113,6 +123,7 @@ export const pageQuery = graphql`
         }
         heading
         subheading
+        marquee
         mainpitch {
           title
           description

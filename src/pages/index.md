@@ -4,6 +4,7 @@ title: Great coffee with a conscience
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
+marquee: "+++Laptpos für Neuland: Spenden Sie heute Ihr altes Gerät. Wir machen es fit und leiten es an bedürftige Schulen in Leuland weiter+++"
 mainpitch:
   title: Why Kaldi
   description: >

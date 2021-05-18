@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import { Link, graphql, StaticQuery } from "gatsby";
 import { LinkIntern } from "./Link";
 
+import SYSTEM_DATA from "../data/system.yaml";
+
 const BlogRoll = ({ data }: any) => {
   const { edges: posts } = data.allMarkdownRemark;
 
@@ -33,10 +35,9 @@ const BlogRoll = ({ data }: any) => {
               <p>
                 {post.excerpt}
                 <br />
-                <br />
-                <Link className="button" to={post.fields.slug}>
-                  Keep Reading →
-                </Link>
+                <LinkIntern url={post.fields.slug}>
+                  {SYSTEM_DATA.GENERAL.MEHR}
+                </LinkIntern>
               </p>
             </article>
           </div>

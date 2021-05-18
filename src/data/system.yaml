@@ -1,3 +1,6 @@
+GENERAL:
+  MEHR: "mehr..."
+  ARTIKEL: "Weiter Artikel"
 LINKS:
   INTERN:
     HOME: "/"
@@ -7,6 +10,7 @@ LINKS:
     MITMACHEN: "/mitmachen"
     DATENSCHUTZ: "/datenschutz"
     IMPRESSUM: "/impressum"
+    BLOG: "/blog"
   NAMES:
     JOBS: Jobs
     NEULAND: Neuland
@@ -14,6 +18,7 @@ LINKS:
     MITMACHEN: Mitmachen
     DATENSCHUTZ: Datenschutz
     IMPRESSUM: Impressum
+    BLOG: Blog
   EXTERN:
     LINKEDIN: "https://www.linkedin.com/"
     XING: "https://www.xing.com/"
