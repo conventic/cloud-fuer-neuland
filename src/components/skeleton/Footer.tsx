@@ -9,7 +9,7 @@ const Footer = () => {
     <footer>
       <div className="footer__container--outer">
         <div className="columns is-marginless is-paddingless footer__container--inner">
-          <div className="column is-marginless is-paddingless is-8 footer__menu">
+          <div className="column is-8 footer__menu">
             <div>{SYSTEM_DATA.FOOTER.ADDRESS}</div>
             <div>
               <Link to={SYSTEM_DATA.LINKS.INTERN.IMPRESSUM}>

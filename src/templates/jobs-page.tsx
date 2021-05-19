@@ -9,6 +9,7 @@ import {
 } from "../components/PersonioXML";
 import { SidePanel } from "../components/SidePanel";
 
+
 export const JobsPageTemplate = ({
   title,
   contentComponent,
@@ -43,7 +44,7 @@ export const JobsPageTemplate = ({
             </div>
           </div>
           <div className="column">
-            <SidePanel />
+            <SidePanel classnames={"sidepanel__container--dimension"} />
           </div>
         </div>
       </div>

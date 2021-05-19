@@ -4,12 +4,28 @@
   color: $primary;
 }
 
+.color__secondary {
+  color: $secondary;
+}
+
+//Images
+
 .img__bg__down {
   background-image: url("../../static/img/polygon_half_down.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
+.img__bg__up {
+  background-image: url("../../static/img/polygon_half_up.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .neuland_jumbo {
   text-align: end;
+}
+
+.index__bg--color {
+  background-color: $light-yellow;
 }

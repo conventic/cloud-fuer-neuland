@@ -30,7 +30,7 @@ export const MitmachenPageTemplate = ({
             </div>
           </div>
           <div className="column">
-            <SidePanel />
+          <SidePanel classnames={"sidepanel__container--dimension"} />
           </div>
         </div>
       </div>

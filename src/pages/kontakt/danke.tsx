@@ -1,7 +1,8 @@
 import React from "react";
-import Layout from "../components/skeleton/Layout";
+import Layout from "../../components/skeleton/Layout";
+import SYSTEM_DATA from "../../data/system.yaml";
 
-const NotFoundPage = () => (
+const Danke = () => (
   <Layout>
     <section className="section section--gradient">
       <div className="container">
@@ -9,9 +10,9 @@ const NotFoundPage = () => (
           <div className="column is-10">
             <div className="section">
               <h2 className="color__primary">
-                404: Not found - Diese Seite gibt es leider nicht
+                {SYSTEM_DATA.PAGES.DANKE.HEADER}
               </h2>
-              <p>Klick dich weiter oder besuche unsere Social Media Kanäle.</p>
+              <p>{SYSTEM_DATA.PAGES.DANKE.CONTENT}</p>
             </div>
           </div>
         </div>
@@ -20,4 +21,4 @@ const NotFoundPage = () => (
   </Layout>
 );
 
-export default NotFoundPage;
+export default Danke;

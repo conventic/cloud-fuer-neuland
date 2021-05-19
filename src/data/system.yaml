@@ -1,6 +1,6 @@
 GENERAL:
   MEHR: "mehr..."
-  ARTIKEL: "Weiter Artikel"
+  ARTIKEL: "Weitere Artikel"
 LINKS:
   INTERN:
     HOME: "/"
@@ -27,7 +27,13 @@ LINKS:
     INSTAGRAM: "https://www.instagram.com/"
 FOOTER:
   ADDRESS: Cloud für das Neuland c/o conventic GmbH, Burgstr. 69, 53177 Bonn
-
-  
-
-
+SIDEPANEL:
+  ACTION: "Eine Aktion von"
+  UND: "und"
+PAGES:
+  ERROR_404:
+    HEADER: "404: Not found - Diese Seite gibt es leider nicht"
+    CONTENT: "Klick dich weiter oder besuche unsere Social Media Kanäle."
+  DANKE:
+    HEADER: "Danke"
+    CONTENT: "Die Anfrage wurde versendet. Sie erhalten schnellstmöglich eine Antwort."
