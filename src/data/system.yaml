@@ -20,11 +20,11 @@ LINKS:
     IMPRESSUM: Impressum
     BLOG: Blog
   EXTERN:
-    LINKEDIN: "https://www.linkedin.com/"
-    XING: "https://www.xing.com/"
-    TWITTER: "https://twitter.com/"
-    FACEBOOK: "https://www.facebook.com/"
-    INSTAGRAM: "https://www.instagram.com/"
+    LINKEDIN: "https://de.linkedin.com/company/conventic-gmbh"
+    XING: "https://www.xing.com/pages/conventicgmbh"
+    TWITTER: "https://twitter.com/conventic_com?lang=de"
+    FACEBOOK: "https://de-de.facebook.com/conventic/"
+    INSTAGRAM: "https://www.instagram.com/conventic_gmbh_/?hl=de"
 FOOTER:
   ADDRESS: Cloud für das Neuland c/o conventic GmbH, Burgstr. 69, 53177 Bonn
 SIDEPANEL:
@@ -37,3 +37,11 @@ PAGES:
   DANKE:
     HEADER: "Danke"
     CONTENT: "Die Anfrage wurde versendet. Sie erhalten schnellstmöglich eine Antwort."
+  KONTAKT:
+    HEADER: "Kontakt"
+    NAME: "Name"
+    EMAIL: "Email"
+    NACHRICHT: "Nachricht"
+    SENDEN: "Senden"
+  BLOG:
+    HEADER: "Blog"

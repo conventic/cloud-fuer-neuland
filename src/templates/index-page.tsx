@@ -30,9 +30,12 @@ export const IndexPageTemplate = ({
     let substrings = subtitle.split("Software");
 
     return (
-      <span style={{
-        fontSize: "150%"
-      }} className={"color__secondary"}>
+      <span
+        style={{
+          fontSize: "150%",
+        }}
+        className={"color__secondary"}
+      >
         {substrings[0]}
         <span className="color__primary">{"Software"}</span>
         {substrings[1]}
@@ -48,50 +51,54 @@ export const IndexPageTemplate = ({
           <div className="section">
             <div className="columns">
               <div className="column is-12 index__bg--color">
-                  <div className="columns">
-                    <div className="column is-9 is-marginless is-paddingless">
+                <div className="columns">
+                  <div className="column is-9 is-marginless is-paddingless">
+                    <div
+                      style={{
+                        backgroundImage: `url(${Girl})`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        height: "100%",
+                      }}
+                    >
                       <div
-                        style={{
-                          backgroundImage: `url(${Girl})`,
-                          backgroundRepeat: "no-repeat",
-                          backgroundSize: "cover",
-                          height: "100%",
-                        }}
+                        style={{ zIndex: 2, height: "100%" }}
+                        className="img__bg__up"
                       >
                         <div
-                          style={{ zIndex: 2, height: "100%" }}
-                          className="img__bg__up"
+                          style={{
+                            width: "35%",
+                            paddingTop: "1rem",
+                            paddingLeft: "1rem",
+                          }}
                         >
-                          <div
+                          <span
                             style={{
-                              width: "35%",
-                              paddingTop: "1rem",
-                              paddingLeft: "1rem",
+                              fontSize: "250%",
                             }}
+                            className={"color__secondary"}
                           >
-                            <span style={{
-        fontSize: "250%"
-      }} className={"color__secondary"} >{title}</span>
-      <br/>
-                            {adjustSubtitle(subtitle)}
-                          </div>
+                            {title}
+                          </span>
+                          <br />
+                          {adjustSubtitle(subtitle)}
                         </div>
                       </div>
                     </div>
-                    <div className="column is-3 is-marginless is-paddingless">
-                      <SidePanel />
-                    </div>
                   </div>
-                  <div className="columns">
-                    <div className="column is-9 ">
-                      <PageContent content={content} />
-                    </div>
+                  <div className="column is-3 is-marginless is-paddingless">
+                    <SidePanel />
+                  </div>
+                </div>
+                <div className="columns">
+                  <div className="column is-9 ">
+                    <PageContent content={content} />
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
+        </div>
 
         <div className="container">
           <div className="section">
