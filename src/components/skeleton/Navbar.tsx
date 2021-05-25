@@ -37,6 +37,7 @@ const Navbar = () => {
             <LinkIntern
               url={SYSTEM_DATA.LINKS.INTERN.JOBS}
               classname={"navbar__item"}
+              activeclassname={"navbar__item--active"}
             >
               {SYSTEM_DATA.LINKS.NAMES.JOBS}
             </LinkIntern>
@@ -44,6 +45,7 @@ const Navbar = () => {
             <LinkIntern
               url={SYSTEM_DATA.LINKS.INTERN.NEULAND}
               classname={"navbar__item"}
+              activeclassname={"navbar__item--active"}
             >
               {SYSTEM_DATA.LINKS.NAMES.NEULAND}
             </LinkIntern>
@@ -51,6 +53,7 @@ const Navbar = () => {
             <LinkIntern
               url={SYSTEM_DATA.LINKS.INTERN.PROJEKTE}
               classname={"navbar__item"}
+              activeclassname={"navbar__item--active"}
             >
               {SYSTEM_DATA.LINKS.NAMES.PROJEKTE}
             </LinkIntern>
@@ -58,8 +61,16 @@ const Navbar = () => {
             <LinkIntern
               url={SYSTEM_DATA.LINKS.INTERN.MITMACHEN}
               classname={"navbar__item"}
+              activeclassname={"navbar__item--active"}
             >
               {SYSTEM_DATA.LINKS.NAMES.MITMACHEN}
+            </LinkIntern>
+            <LinkIntern
+              url={SYSTEM_DATA.LINKS.INTERN.KONTAKT}
+              classname={"navbar__item"}
+              activeclassname={"navbar__item--active"}
+            >
+              {SYSTEM_DATA.LINKS.NAMES.KONTAKT}
             </LinkIntern>
           </div>
           <div className="navbar__container--icons">
