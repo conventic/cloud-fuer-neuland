@@ -49,80 +49,10 @@ collections:
               default: "index-page",
             }
           - { label: Title, name: title, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string }
           - { label: Image, name: image, widget: image }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Subheading, name: subheading, widget: string }
-          - {
-              label: Mainpitch,
-              name: mainpitch,
-              widget: object,
-              fields:
-                [
-                  { label: Title, name: title, widget: string },
-                  { label: Description, name: description, widget: text },
-                ],
-            }
-          - { label: Description, name: description, widget: string }
-          - {
-              label: Intro,
-              name: intro,
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
-                  {
-                    label: Blurbs,
-                    name: blurbs,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Text, name: text, widget: text },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: Main,
-              name: main,
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
-                  {
-                    label: Image1,
-                    name: image1,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                  {
-                    label: Image2,
-                    name: image2,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                  {
-                    label: Image3,
-                    name: image3,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                ],
-            }
+          - { label: Marquee, name: marquee, widget: string }
+          - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/neuland/index.md"
         label: "Neuland"
         name: "neuland"
@@ -287,7 +217,7 @@ collections:
     label: "Data"
     description: "Hier können neue Datensätze eingefügt werden."
     files:
-      - file: "src/data/address/address.yaml"
+      - file: "src/data/address/address.md"
         label: "Adresse"
         name: "address"
         fields:
@@ -297,7 +227,6 @@ collections:
               widget: object,
               fields:
                 [
-                  { label: Image, name: image, widget: image },
                   { label: Straße, name: street, widget: string },
                   { label: PLZ, name: zipcode, widget: string },
                   { label: Ort, name: place, widget: string },
@@ -314,7 +243,6 @@ collections:
               widget: object,
               fields:
                 [
-                  { label: Image, name: image, widget: image },
                   { label: Straße, name: street, widget: string },
                   { label: PLZ, name: zipcode, widget: string },
                   { label: Ort, name: place, widget: string },

@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Tu was Gutes!
-image: /img/home-jumbotron.jpg
+image: "/img/Programmer_girl.jpg"
 subtitle: Werde Software Entwicklungshelfer (m/w/d).
 marquee: "+++Laptpos für Neuland: Spenden Sie heute Ihr altes Gerät. Wir machen es fit und leiten es an bedürftige Schulen in Leuland weiter+++"
 ---

@@ -1,5 +1,5 @@
 import React from "react";
-import Testimage from "../../img/testimage.jpg";
+import CFDNLogo from "../../../static/img/CFDN_Logo.png";
 
 import { LinkIntern, LinkExtern } from "../Link";
 
@@ -28,7 +28,7 @@ const Navbar = () => {
               url={SYSTEM_DATA.LINKS.INTERN.HOME}
               classname={"navbar-item"}
             >
-              <img src={Testimage} alt="Testimage" />
+              <img src={CFDNLogo} alt="CFDN-Logo" />
             </LinkIntern>
           </div>
         </div>

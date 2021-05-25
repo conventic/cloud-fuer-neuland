@@ -1,6 +1,6 @@
 import React from "react";
 import CvtLogo from "../img/conventic_logo.svg";
-import Testimage from "../img/testimage.jpg";
+import CFDNLogo from "../../static/img/CFDN_Logo.png";
 import SYSTEM_DATA from "../data/system.yaml";
 
 export const SidePanel = ({ classnames }: { classnames?: string }) => {
@@ -18,7 +18,7 @@ export const SidePanel = ({ classnames }: { classnames?: string }) => {
           <p>{SYSTEM_DATA.SIDEPANEL.ACTION}</p>
           <img src={CvtLogo} alt="Conventic-Logo" />
           <p>{SYSTEM_DATA.SIDEPANEL.UND}</p>
-          <img src={Testimage} alt="Testimage" />
+          <img src={CFDNLogo} alt="Testimage" />
         </div>
       </div>
     </div>
