@@ -14,12 +14,13 @@
 @import "components/sidePanel";
 @import "components/cards";
 @import "components/marquee";
+@import "components/personio";
 
 // Layouts
 @import "layouts/navbar";
 @import "layouts/footer";
 
-//Test
+//Test-Class
 $cdfn-test: #cd17dd !default;
 
 .test-class {

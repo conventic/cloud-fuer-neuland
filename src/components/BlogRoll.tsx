@@ -13,11 +13,7 @@ const BlogRoll = ({ data }: any) => {
       {posts &&
         posts.map(({ node: post }) => (
           <div className="is-parent column is-12" key={post.id}>
-            <article
-              className={`blog-list-item tile is-child ${
-                post.frontmatter.featuredpost ? "is-featured" : ""
-              }`}
-            >
+            <article className={`blog-list-item tile is-child `}>
               <header>
                 <p className="post-meta">
                   <LinkIntern
@@ -73,14 +69,6 @@ export default () => (
                 title
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
-                featuredpost
-                featuredimage {
-                  childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
               }
             }
           }

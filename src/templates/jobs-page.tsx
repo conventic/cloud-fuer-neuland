@@ -10,6 +10,7 @@ import {
 import { SidePanel } from "../components/SidePanel";
 
 
+
 export const JobsPageTemplate = ({
   title,
   contentComponent,
@@ -39,6 +40,7 @@ export const JobsPageTemplate = ({
                 <div className="column is-10 img__bg__down">
                   <h2>{title}</h2>
                   <DisplayPersonioXML data={personioXML.data} />
+                  
                 </div>
               </div>
             </div>
