@@ -48,8 +48,7 @@ export const DisplayPersonioXML = ({ data }: any) => {
 
   const copyToClipboard = (e: any, extensionHash: string) => {
     e.preventDefault();
-    // let url = "https://www.cloud-fuer-das-neuland.de/jobs?";
-    let url = "www.localhost:8000/jobs?";
+    let url = "https://www.cloud-fuer-das-neuland.de/jobs?";
     navigator.clipboard.writeText(url + extensionHash);
   };
 
