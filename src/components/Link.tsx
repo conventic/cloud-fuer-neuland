@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
-
 export const LinkExtern = ({
   url,
   children,
@@ -51,15 +49,3 @@ export const LinkIntern = ({
   );
 };
 
-export const LinkAnchor = ({
-  text,
-  url,
-  extension,
-}: {
-  text: string;
-  url: string;
-  extension: string;
-}) => {
-  console.log(url, extension);
-  return <AnchorLink to={`/${url}#${extension}`} title={text} />;
-};

@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useEffect, useRef, createRef } from "react";
 import { useQuery } from "react-query";
 import { parseString } from "xml2js";
-import { LinkAnchor } from "./Link";
-import { NumberToAlphabet } from "number-to-alphabet";
 import { HTMLContent } from "./Content";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShareAlt } from "@fortawesome/free-solid-svg-icons";
+import { useLocation } from "@reach/router";
 
 export const FetchPersonioXML = () => {
   const { isLoading, error, data } = useQuery("personioXML", () =>
@@ -30,36 +29,45 @@ export const FetchPersonioXML = () => {
 };
 
 export const DisplayPersonioXML = ({ data }: any) => {
-  const defaultAlphabet = new NumberToAlphabet();
+  let location = useLocation();
+  const eleRef = useRef<any[]>([]);
 
-  const copyToClipboard = (e, extensionHash) => {
+  eleRef.current = data.map(
+    (ele: any, i: number) => eleRef.current[i] ?? createRef()
+  );
+
+  useEffect(() => {
+    if (!!location && !!eleRef) {
+      eleRef.current.forEach((ele) => {
+        if (!!ele && "?" + ele.current.id === location.search) {
+          window.scrollTo(0, ele.current.offsetTop - 70);
+        }
+      });
+    }
+  }, [location]);
+
+  const copyToClipboard = (e: any, extensionHash: string) => {
     e.preventDefault();
-    let url = "https://www.cloud-fuer-das-neuland.de/jobs#";
+    // let url = "https://www.cloud-fuer-das-neuland.de/jobs?";
+    let url = "www.localhost:8000/jobs?";
     navigator.clipboard.writeText(url + extensionHash);
   };
 
-  console.log(data);
   return (
     <React.Fragment>
-      {data.map((item: any, index: number) => {
+      {data.map((item: any, i: number) => {
         return (
-          <React.Fragment key={"personio-" + index}>
+          <React.Fragment key={"personio-" + i}>
             <div className="columns">
-              <div
-                id={defaultAlphabet.numberToString(parseInt(item.id))}
-                className="column is-11"
-              >
-                <h3>{item.name}</h3>
+              <div className="column is-11">
+                <h3 id={item.id} ref={eleRef.current[i]}>
+                  {item.name}
+                </h3>
               </div>
               <div className="column is-1">
                 <button
                   className="button__share radius__none"
-                  onClick={(e) =>
-                    copyToClipboard(
-                      e,
-                      defaultAlphabet.numberToString(parseInt(item.id))
-                    )
-                  }
+                  onClick={(e) => copyToClipboard(e, item.id[0])}
                 >
                   <FontAwesomeIcon icon={faShareAlt} size="2x" />
                 </button>

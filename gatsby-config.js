@@ -6,12 +6,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
-    {
-      resolve: "gatsby-plugin-anchor-links",
-      options: {
-        offset: -64
-      }
-    },
+
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: "gatsby-source-filesystem",
