@@ -18,4 +18,4 @@ Deutschland ist ein Land, das an allen Ecken und Enden dringend Hilfe benötigt.
 
 Aber Du kannst mithelfen, dass es besser wird. Melde dich jetzt bei uns und werde unbedingt
 
-**ENTWICKLUNGSHELFER FÜR DAS NEULAND.**
+**SOFTWARE-ENTWICKLUNGSHELFER FÜR DAS NEULAND.**
