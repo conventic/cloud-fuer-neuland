@@ -14,4 +14,8 @@ So sieht es aus:
 
 Deutschland ist ein Land, das an allen Ecken und Enden dringend Hilfe benötigt. Wir können und wollen helfen. Dafür suchen wir Software-EntwicklerInnen, DevOps IngenieurInnen und BeraterInnen, die nicht länger tatenlos zuschauen können, sondern diesen Zustand aktiv mit uns beheben wollen.
 
-Aber Du kannst mithelfen, dass es besser wird. Melde dich jetzt bei uns und werde unbedingt **ENTWICKLUNGSHELFER FÜR DAS NEULAND.**
+
+
+Aber Du kannst mithelfen, dass es besser wird. Melde dich jetzt bei uns und werde unbedingt
+
+**ENTWICKLUNGSHELFER FÜR DAS NEULAND.**
