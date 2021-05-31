@@ -6,6 +6,9 @@ description: >+
   Stillstand und Digitalisierungsstau allenthalben. Ganz besonders im
   öffentlichen Bereich.
 
+
+  Das Land lebt seit Jahren von seiner Substanz. Und die ist bspw. bei den Gesundheitsämtern u.a. leider das Fax. Dazu kommt in Deutschland überbordender und teilweise als Selbstzweck verkommener Datenschutz.
+
 tags:
   - flavor
   - tasting
