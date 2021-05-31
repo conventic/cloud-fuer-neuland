@@ -2,8 +2,10 @@
 templateKey: blog-post
 title: "Neuland: nur mittelmäßig vorbereitet auf die Herausforderungen von morgen"
 date: 2021-05-25T13:09:37.182Z
-description: The Coffee Taster’s Flavor Wheel, the official resource used by
-  coffee tasters, has been revised for the first time this year.
+description: >+
+  Stillstand und Digitalisierungsstau allenthalben. Ganz besonders im
+  öffentlichen Bereich.
+
 tags:
   - flavor
   - tasting
