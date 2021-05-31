@@ -8,13 +8,9 @@ marquee: "+++ Laptops für das Neuland: Spenden Sie heute Ihr altes Gerät. Wir
 ---
 So sieht es aus:
 
-
-
-* \- Edge-Empfang auf dem Land
-* \- Fax im Office
-* \- Overheadprojektoren in den Schulen, dafür aber kein WLAN
-
-
+* Edge-Empfang auf dem Land
+* Fax im Office
+* Overheadprojektoren in den Schulen, dafür aber kein WLAN
 
 Deutschland ist ein Land, das an allen Ecken und Enden dringend Hilfe benötigt. Wir können und wollen helfen. Dafür suchen wir Software-EntwicklerInnen, DevOps IngenieurInnen und BeraterInnen, die nicht länger tatenlos zuschauen können, sondern diesen Zustand aktiv mit uns beheben wollen.
 
