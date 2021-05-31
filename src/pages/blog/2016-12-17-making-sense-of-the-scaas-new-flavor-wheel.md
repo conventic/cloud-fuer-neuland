@@ -12,7 +12,7 @@ tags:
   - flavor
   - tasting
 ---
-![flavor wheel](/img/flavor_wheel.jpg)
+![flavor wheel](/img/flavor_wheel.jpg "Digitalisierung tut weh")
 
 Bitte nicht falsch verstehen, wir sind für Datenschutz und Datensicherheit. Was aber in Deutschland daraus mit teilweise religiöser Inbrunst daraus gemacht wird ist geneigt, jeglichen Fortschritt zu verhindern. 
 
