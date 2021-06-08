@@ -1,6 +1,7 @@
 GENERAL:
   MEHR: "mehr..."
   ARTIKEL: "Weitere Artikel"
+  LINK_COPY: "Link wurde kopiert."
 LINKS:
   INTERN:
     HOME: "/"
@@ -47,3 +48,4 @@ PAGES:
     SENDEN: "Senden"
   BLOG:
     HEADER: "Blog"
+  
