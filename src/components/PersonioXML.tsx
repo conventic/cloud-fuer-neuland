@@ -5,6 +5,9 @@ import { HTMLContent } from "./Content";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShareAlt } from "@fortawesome/free-solid-svg-icons";
 import { useLocation } from "@reach/router";
+import { useSnackbarUpdate } from "../context/snackbar-ctx";
+
+import SYSTEM_DATA from "../data/system.yaml";
 
 export const FetchPersonioXML = () => {
   const { isLoading, error, data } = useQuery("personioXML", () =>
@@ -30,6 +33,7 @@ export const FetchPersonioXML = () => {
 
 export const DisplayPersonioXML = ({ data }: any) => {
   let location = useLocation();
+  const toggleSnackbar = useSnackbarUpdate();
   const eleRef = useRef<any[]>([]);
 
   eleRef.current = data.map(
@@ -66,7 +70,10 @@ export const DisplayPersonioXML = ({ data }: any) => {
               <div className="column is-1">
                 <button
                   className="button__share radius__none"
-                  onClick={(e) => copyToClipboard(e, item.id[0])}
+                  onClick={(e) => {
+                    copyToClipboard(e, item.id[0]);
+                    toggleSnackbar(SYSTEM_DATA.GENERAL.LINK_COPY);
+                  }}
                 >
                   <FontAwesomeIcon icon={faShareAlt} size="2x" />
                 </button>
