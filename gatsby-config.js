@@ -91,7 +91,7 @@ module.exports = {
           siteId: 2251601,
           enableCcpa: true,
           countryDetection: true,
-          reloadOnConsent: true,
+          reloadOnConsent: false,
           cookiePolicyId: 80467400,
           cookiePolicyUrl: "/datenschutz",
           banner: {
