@@ -9,7 +9,7 @@ export const Marquee = ({
 }) => {
   return (
     <div className={classnames ? "marquee" + " " + classnames : "marquee"}>
-      <span>{text}</span>
+      <span style={{width: "100%"}}>{text}</span>
     </div>
   );
 };

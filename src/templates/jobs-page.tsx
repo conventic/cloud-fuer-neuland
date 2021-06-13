@@ -27,7 +27,7 @@ export const JobsPageTemplate = ({ title }: { title: string }) => {
             <div className="section">
               <div className="columns">
                 <div className="column is-10 img__bg__down">
-                  <h2>{title}</h2>
+                  <h2 className="color__primary">{title}</h2>
                   <DisplayPersonioXML data={personioXML.data} />
                 </div>
               </div>

@@ -61,7 +61,7 @@ export const DisplayPersonioXML = ({ data }: any) => {
       {data.map((item: any, i: number) => {
         return (
           <React.Fragment key={"personio-" + i}>
-            <div className="columns">
+            <div className="columns is-align-items-center">
               <div className="column is-11">
                 <h3 id={item.id} ref={eleRef.current[i]}>
                   {item.name}
