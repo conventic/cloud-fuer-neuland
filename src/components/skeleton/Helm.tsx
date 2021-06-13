@@ -12,6 +12,18 @@ const Helm = () => {
       <meta name="description" content={description} />
 
       <link
+        rel="icon"
+        sizes="512x512"
+        href={`${withPrefix("/")}img/android-chrome-512x512.png`}
+      />
+
+      <link
+        rel="icon"
+        sizes="192x192"
+        href={`${withPrefix("/")}img/android-chrome-192x192.png`}
+      />
+
+      <link
         rel="apple-touch-icon"
         sizes="180x180"
         href={`${withPrefix("/")}img/apple-touch-icon.png`}
@@ -29,11 +41,6 @@ const Helm = () => {
         sizes="16x16"
       />
 
-      <link
-        rel="mask-icon"
-        href={`${withPrefix("/")}img/safari-pinned-tab.svg`}
-        color="#ff4400"
-      />
       <meta name="theme-color" content="#fff" />
 
       <meta property="og:type" content="business.business" />
@@ -41,7 +48,7 @@ const Helm = () => {
       <meta property="og:url" content="/" />
       <meta
         property="og:image"
-        content={`${withPrefix("/")}img/og-image.jpg`}
+        content={`${withPrefix("/")}img/CFDN_Logo.png`}
       />
     </Helmet>
   );
