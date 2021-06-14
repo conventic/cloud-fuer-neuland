@@ -8,6 +8,19 @@ import ProjektePagePreview from "./preview-templates/ProjektePagePreview";
 import BlogPostPreview from "./preview-templates/BlogPostPreview";
 import IndexPagePreview from "./preview-templates/IndexPagePreview";
 
+const config =
+  process.env.NODE_ENV === "development"
+    ? { local_backend: { url: "http://localhost:8000/admin" } }
+    : {
+        backend: {
+          name: "git-gateway",
+          branch: process.env.GATSBY_BRANCH || "master",
+        },
+      };
+
+      console.log("config", config, process.env, process.env.NODE_ENV, process.env.GATSBY_BRANCH, process.env.BRANCH );
+CMS.init({ config });
+
 CMS.registerMediaLibrary(uploadcare);
 CMS.registerMediaLibrary(cloudinary);
 

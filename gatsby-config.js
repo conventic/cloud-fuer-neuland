@@ -1,3 +1,5 @@
+process.env.GATSBY_BRANCH = process.env.HEAD;
+console.log("Branch: ", process.env.head);
 module.exports = {
   siteMetadata: {
     title: "Cloud für das Neuland",
@@ -78,6 +80,7 @@ module.exports = {
       resolve: "gatsby-plugin-netlify-cms",
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
+        manualInit: true,
       },
     },
     {
