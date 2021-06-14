@@ -1,5 +1,5 @@
 process.env.GATSBY_BRANCH = process.env.HEAD;
-console.log("Branch: ", process.env.head);
+console.log("Branch: ", process.env.HEAD);
 module.exports = {
   siteMetadata: {
     title: "Cloud für das Neuland",

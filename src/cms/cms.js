@@ -18,7 +18,6 @@ const config =
         },
       };
 
-      console.log("config", config, process.env, process.env.NODE_ENV, process.env.GATSBY_BRANCH, process.env.BRANCH );
 CMS.init({ config });
 
 CMS.registerMediaLibrary(uploadcare);
