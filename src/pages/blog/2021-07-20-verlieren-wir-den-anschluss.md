@@ -9,8 +9,8 @@ description: Andere Länder, die wir als Dritte Welt-Länder wähnen, sind mit
 tags:
   - "#DigitalisierungVerschlafen #"
 ---
-Wir glauben, dass die Politik hier ihrem Auftrag nicht nachkommt, nicht zuletzt weil Berufspolitiker falsch motiviert sind und zum anderen fachlich von der Digitalisierug keine Ahnung haben. Man kann es sehen, an der Schulpolitik, ander öffentlichen Verwaltung, überall. \
+Wir glauben, dass die Politik hier ihrem Auftrag nicht nachkommt, nicht zuletzt weil Berufspolitiker falsch motiviert sind und zum anderen fachlich von der Digitalisierung keine Ahnung haben. Man kann es sehen, an der Schulpolitik, an der öffentlichen Verwaltung, überall. \
 \
-Zur Deutlichmachung empfehlen wir folgenden Beitrag auf YouTube: \
+Zur Verdeutlichung empfehlen wir folgenden Beitrag auf YouTube: \
 \
 [Alles per App - Wie weit ist China uns voraus? | WDR Doku](https://www.youtube.com/watch?v=VNeEWzA6rR8)
