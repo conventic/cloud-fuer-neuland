@@ -1,4 +1,5 @@
 backend:
+  name: "git-gateway"
   commit_messages:
     create: "Create {{collection}} “{{slug}}”"
     update: "Update {{collection}} “{{slug}}”"

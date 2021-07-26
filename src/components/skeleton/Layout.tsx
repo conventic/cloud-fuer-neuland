@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import { Snackbar } from "../Snackbar";
 import { QueryClientProvider, QueryClient } from "react-query";
-
+import { NewsletterPopUp } from "../Newsletter";
 import "../../sass/main.scss";
 import { SnackbarProvider } from "../../context/snackbar-ctx";
 
@@ -17,6 +17,7 @@ const TemplateWrapper = ({ children }: any) => {
         <div className="site">
           <Navbar />
           <main className="site__content">{children}</main>
+          <NewsletterPopUp />
           <Snackbar />
           <Footer />
         </div>
