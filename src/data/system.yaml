@@ -2,6 +2,11 @@ GENERAL:
   MEHR: "mehr..."
   ARTIKEL: "Weitere Artikel"
   LINK_COPY: "Link wurde kopiert."
+ERROR_MESSAGES:
+  RELOAD_PAGE: "Unbekannter Fehler: Bitte laden sie die Seite neu und versuchen Sie es erneut."
+  NEWSLETTER_LOADING: "Newsletter konnte nicht geladen werden."
+  SOCIALMEDIA_LOADING: "Socialmediadaten konnten nicht geladen werden."
+  LOADING: "Daten sind derzeit nicht verfügbar."
 LINKS:
   INTERN:
     HOME: "/"
@@ -48,4 +53,6 @@ PAGES:
     SENDEN: "Senden"
   BLOG:
     HEADER: "Blog"
-  
+COMPONENTS:
+  NEWSLETTER: 
+    HEADER: Newsletter abonnieren

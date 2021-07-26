@@ -10,7 +10,7 @@ import IndexPagePreview from "./preview-templates/IndexPagePreview";
 
 const config =
   process.env.NODE_ENV === "development"
-    ? { local_backend: { url: "http://localhost:8000/admin" } }
+    ? { local_backend: true }
     : {
         backend: {
           name: "git-gateway",
