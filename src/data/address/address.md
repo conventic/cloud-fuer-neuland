@@ -6,7 +6,7 @@ dataAddressBonn:
   place: Bonn
   district: Bad Godesberg
   country: Deutschland
-  fon: +49 228 97 27 27 40
+  fon: +49 228 76 37 69 70
   mailLink: hello@conventic.com
   mailContent: mailto:hello@conventic.com
 dataAddressBraunschweig:
@@ -15,7 +15,7 @@ dataAddressBraunschweig:
   place: Braunschweig
   district:
   country: Deutschland
-  fon: +49 228 97 27 27 40
+  fon: +49 228 76 37 69 70
   mailLink: hello@conventic.com
   mailContent: mailto:hello@conventic.com
 ---
