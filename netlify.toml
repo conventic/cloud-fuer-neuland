@@ -2,7 +2,26 @@
   publish = "public"
   command = "npm run build"
   functions = "lambda"
+
 [build.environment]
-  NODE_VERSION = "12"
-  YARN_VERSION = "1.22.4"
+  NODE_VERSION = "14"
+  AWS_LAMBDA_JS_RUNTIME = "nodejs14.x"
+  YARN_VERSION = "1.22.17"
   YARN_FLAGS = "--no-ignore-optional"
+
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+
+  [plugins.inputs.thresholds]
+    performance = 0.2
+    accessibility = 0.5
+    best-practices = 0.5
+    seo = 0.5
+
+  [plugins.inputs]
+    output_path = "reports/lighthouse.html"
+
+
+[[plugins]]
+  package = "@netlify/plugin-gatsby"
